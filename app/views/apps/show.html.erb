@@ -1,0 +1,15 @@
+
+<div class="container">
+	<div class="row">
+		<%= @app.name %> | <%= @app.email %>
+		<%= render 'shared/notes_form' %>
+	</div>
+	
+	<div class="row">
+		<% @feed.reverse_order.each do |present| %>
+			<ul class="nav nav-pills nav-stacked">
+				<li><%= present.comment %><li>
+			</ul>
+		<% end %>
+	</div>
+</div>

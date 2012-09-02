@@ -1,0 +1,25 @@
+<div class= "row">
+	<div class="span12">
+		<legend>Create Job</legend>
+		
+		<%= form_for @job do |f| %>
+		
+			
+			<p>
+				<%= f.label "Job Name" %>
+				<%= f.text_field :title%>
+			</p>
+			
+			<p>
+				<%= f.label "Job Description" %>
+				<%= f.text_area :description, :style => "height:100px; width:400px;"%>
+			</p>
+			
+		
+				<%= f.submit "Submit Job Paramters"%>
+			</p>
+			
+		<% end %>
+		
+	</div>
+</div>

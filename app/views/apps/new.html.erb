@@ -1,0 +1,40 @@
+<div class= "row">
+	
+	<div class="span6">
+	pddgi
+	</div>
+	
+	<div class="span6">
+		<legend>Apply for Job</legend>
+		
+		<%= form_for [@job, @app], :html => {:class => "form-horizontal"} do |f| %>
+		
+			
+			<p>
+				<%= f.label "Name" %>
+				<%= f.text_field :name %>
+			</p>
+			
+			<p>
+				<%= f.label "Email" %>
+				<%= f.text_field :email %>
+			</p>
+			
+			<p>
+				<%= f.label :coverletter %><%= f.file_field :coverletter %>
+			</p>
+			
+			<p>
+				<%= f.label :resume %><%= f.file_field :resume %>
+			</p>
+			<p>
+				<%= f.label :transcript %><%= f.file_field :transcript %>
+			</p>
+			
+				<%= f.submit "Submit Job Paramters"%>
+			</p>
+			
+		<% end %>
+		
+	</div>
+</div>

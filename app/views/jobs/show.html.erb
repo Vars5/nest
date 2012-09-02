@@ -1,0 +1,9 @@
+<p> <b>Job Title:</b> <%= @job.title %> </p>
+	
+<b> Description: </b> <%= @job.description %>
+
+<% @app.each do |form| %>
+	<li>
+    	<%= link_to form.name, form  %>
+    </li>
+<% end %>

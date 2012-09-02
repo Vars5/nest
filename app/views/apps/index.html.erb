@@ -1,0 +1,9 @@
+<h1> Index Page </h1>
+	
+	<% @app.each do |form| %>
+		<li>
+	    	<%= link_to form.name  %>
+			<%= link_to form.email%>
+	    </li>
+	<% end %>
+	

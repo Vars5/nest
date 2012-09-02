@@ -1,0 +1,9 @@
+<h1> Index Page </h1>
+	
+	<% @job.each do |form| %>
+		<li>
+
+	    	<%= link_to form.title, form %>
+
+	    </li>
+	<% end %>
