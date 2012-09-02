@@ -6,6 +6,9 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+
+
+
 gem 'devise'
 gem 'bootstrap-sass', '~> 2.0.4.0'
 gem 'bootstrap-will_paginate'
