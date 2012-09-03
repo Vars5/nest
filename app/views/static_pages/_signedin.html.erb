@@ -1,11 +1,21 @@
-Signed In
+<div style="height:100%;">
+	
+	<h4>Dashboard</h4>
+	<p>Test</p>
 
+			
 
-<%= form_for @write do |f| %>
-	
-	<%= f.label "Notes Area"%>
-	<%= f.text_area :note %>
-	
-	<%= f.submit %>
-	
-<% end %>
+<h4>Active Jobs</h4>
+		<ul class="thumbnails">
+			<% @listjobs.each do |show| %>
+			<li class="span3">
+				<div class="thumbnail">
+					<strong><p><%= show.title %></p></strong>
+					<p><%= show.description %></p>
+					<p><%= link_to "Go to job page (click)", show %>
+				</div>
+				<% end %>
+			</li>
+		</ul>
+</div>
+
