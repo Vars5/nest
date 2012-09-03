@@ -4,4 +4,8 @@ class App < ActiveRecord::Base
   belongs_to :job
   has_many :notes
   
+  has_attached_file :resume
+  has_attached_file :coverletter
+  has_attached_file :transcript
+  
 end

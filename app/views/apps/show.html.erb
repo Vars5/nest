@@ -1,7 +1,39 @@
 
 <div class="container">
 	<div class="row">
-		<%= @app.name %> | <%= @app.email %>
+		 <table>
+			<tr>
+				<td><b> Name:  </b> </td>
+				<td> <%= @app.name %> </td> 
+			</tr>
+			<tr>
+				<td><b> Email:  </b> </td>
+				<td> <%= @app.email %> </td> 
+			</tr>
+			<tr>
+				<td><b> Question 1:  </b> </td>
+				<td> <%= @app.question1_answer %> </td> 
+			</tr>
+			<tr>
+				<td><b> Question 2:  </b> </td>
+				<td> <%= @app.question2_answer %> </td> 
+			</tr>
+			<tr>
+				<td><b> Resume:  </b> </td>
+				<td><%= link_to 'Click here', @app.resume.url %> </td> 
+			</tr>
+			<tr>
+				<td><b> Cover Letter:  </b> </td>
+				<td><%= link_to 'Click here', @app.coverletter.url %> </td> 
+			</tr>
+			<tr>
+				<td><b> Academic Transcript:   </b> </td>
+				<td><%= link_to 'Click here', @app.transcript.url %> </td> 
+			</tr>
+			
+		</table>
+		
+<p> </p>			
 		<%= render 'shared/notes_form' %>
 	</div>
 	

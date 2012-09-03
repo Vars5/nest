@@ -15,12 +15,14 @@ end
 
 def new
   @job = current_user.jobs.new
+
 end
 
 #show page
 def show
   @job = current_user.jobs.find(params[:id])
   @app = @job.apps.all
+
   
   
 end

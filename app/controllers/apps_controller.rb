@@ -14,6 +14,7 @@ end
 def new
   @job = Job.find(params[:job_id])
   @app = @job.apps.build
+  
 
 end
 
@@ -23,26 +24,9 @@ def show
   @app = App.find(params[:id])  
   @note = @app.notes.build
   @feed = @app.notes.paginate(:page => params[:page], :per_page => 30)
+  
  
 
-
-  
-  
-  #@job = Job.find(params[:job_id])
-  #@app = @job.apps.find(params[:id])
-  #@note = @app.notes.build
-  #@note.note = "test"
-  #@note.save
-  
-
-
-  #  redirect_to :controller => 'notes', :action => 'create'
-  
-  #@something = (params[:id])
-  
-  
-    
-  #@proxy = (params[:app_id])
 end
 
 #index

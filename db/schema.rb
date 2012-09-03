@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120902064127) do
+ActiveRecord::Schema.define(:version => 20120903135851) do
 
   create_table "apps", :force => true do |t|
     t.datetime "created_at",               :null => false
@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(:version => 20120902064127) do
     t.string   "transcript_content_type"
     t.integer  "transcript_file_size"
     t.datetime "transcript_updated_at"
+    t.string   "question1_answer"
+    t.string   "question2_answer"
   end
 
   add_index "apps", ["job_id"], :name => "index_apps_on_job_id"
@@ -41,6 +43,8 @@ ActiveRecord::Schema.define(:version => 20120902064127) do
     t.string   "title"
     t.string   "description"
     t.integer  "user_id"
+    t.string   "question1"
+    t.string   "question2"
   end
 
   add_index "jobs", ["user_id"], :name => "index_jobs_on_user_id"
