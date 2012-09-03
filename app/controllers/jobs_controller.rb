@@ -31,9 +31,11 @@ def index
 end
 
 def edit
+  #@job = current_user.jobs.find(params[:id])
 end
 
 def update
+  #@job = current_user.jobs.find(params[:id])
 end
 
 def destroy
