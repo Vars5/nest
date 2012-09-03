@@ -2,14 +2,18 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
+gem 'heroku'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3', :group => [:development, :test]
+group :development, :test do
+  gem 'sqlite3'
+end
+
 group :production do
   gem 'thin'
-  gem 'therubyracer'
-  gem 'libv8', '3.3.10.4'
+  #gem 'therubyracer'
+  #gem 'libv8', '3.3.10.4'
 end
 
 
