@@ -30,9 +30,13 @@
 				<td><b> Academic Transcript:   </b> </td>
 				<td><%= link_to 'Click here', @app.transcript.url %> </td> 
 			</tr>
+			<tr>
+				<td><b> Status:   </b> </td>
+				<td><%= @app.status %> </td> 
+			</tr>
 			
 		</table>
-		
+		<%= render 'shared/status_form' %>
 <p> </p>			
 		<%= render 'shared/notes_form' %>
 	</div>

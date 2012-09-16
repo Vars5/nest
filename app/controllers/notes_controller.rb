@@ -14,24 +14,13 @@ class NotesController < ApplicationController
     @note.user_id = current_user.id
     @note.note = "remove column"
     if @note.save
-        render 'new'
+        redirect_to @app
       else
-        render 'new'
+        redirect_to @app
     end
-      
-
   end  
   
   
-  
-    #render root_path
-   # if @note.save
-      
-    #else
-      
-    #end
-   
-   #@note = @current_app.notes.create[:note]
   
   
   def new

@@ -1,5 +1,5 @@
 class Job < ActiveRecord::Base
-  attr_accessible :title, :description
+  attr_accessible :title, :description, :question1, :question2
   
   has_many :apps
   has_many :notes, through: :apps

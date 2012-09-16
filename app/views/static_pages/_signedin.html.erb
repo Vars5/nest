@@ -12,9 +12,11 @@
 				<div class="thumbnail">
 					<strong><p><%= show.title %></p></strong>
 					<p><%= show.description %></p>
-					<p><%= link_to "Go to job page (click)", show %>
+					<p><%= link_to "see all applicants (click)", show %></p>
+					<p><%= link_to "see the page prospects see", new_job_app_path(show) %></p>					
+					
 				</div>
-				<% end %>
+			<% end %>
 			</li>
 		</ul>
 </div>

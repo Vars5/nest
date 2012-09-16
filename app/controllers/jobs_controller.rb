@@ -22,7 +22,7 @@ end
 def show
   @job = current_user.jobs.find(params[:id])
   @app = @job.apps.all
-
+  @question1 = Job.find(params[:id]).question1
   
   
 end

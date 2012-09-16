@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120903135851) do
+ActiveRecord::Schema.define(:version => 20120916115517) do
 
   create_table "apps", :force => true do |t|
     t.datetime "created_at",               :null => false
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20120903135851) do
     t.datetime "transcript_updated_at"
     t.string   "question1_answer"
     t.string   "question2_answer"
+    t.string   "status"
   end
 
   add_index "apps", ["job_id"], :name => "index_apps_on_job_id"

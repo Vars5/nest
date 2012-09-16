@@ -1,5 +1,5 @@
 class App < ActiveRecord::Base
-  attr_accessible :name, :email, :id, :app_id, :job_id
+  attr_accessible :name, :email, :id, :app_id, :job_id, :question1_answer, :question2_answer
   
   belongs_to :job
   has_many :notes
