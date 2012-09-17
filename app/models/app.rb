@@ -4,6 +4,8 @@ class App < ActiveRecord::Base
   belongs_to :job
   has_many :notes
   
+  validates :name, presence: true
+  
   has_attached_file :resume,
     :storage => :s3,
     :s3_credentials => {

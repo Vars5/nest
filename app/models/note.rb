@@ -3,5 +3,8 @@ class Note < ActiveRecord::Base
   
   belongs_to :app
 
+  validates :comment, presence: true
+  validates :app_id, presence: true
+  validates :user_id, presence: true
   
 end

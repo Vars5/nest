@@ -6,5 +6,11 @@ class Job < ActiveRecord::Base
     
   belongs_to :user
   
+  validates :title, presence: true
+  validates :description, presence: true
+  validates :question1, presence: true
+  validates :question2, presence:true 
+  
+  
 
 end
