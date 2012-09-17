@@ -1,1 +1,29 @@
-Edit Page
+<legend>Edit Job</legend>
+
+<%= form_for @job do |f| %>
+
+	
+	<p>
+		<%= f.label "Job Name" %>
+		<%= f.text_field :title%>
+	</p>
+	
+	<p>
+		<%= f.label "Job Description" %>
+		<%= f.text_area :description, :style => "height:100px; width:400px;"%>
+	</p>
+	
+	<p>
+		<%= f.label "Question1" %>
+		<%= f.text_area :question1, :style => "height:25px; width:400px;"%>
+	</p>
+	
+	<p>
+		<%= f.label "Question2" %>
+		<%= f.text_area :question2, :style => "height:25px; width:400px;"%>
+	</p>
+
+		<%= f.submit "Update Job Paramters", :class => "btn"%>
+	</p>
+	
+<% end %>

@@ -33,7 +33,7 @@ def index
 end
 
 def edit
-  #@job = current_user.jobs.find(params[:id])
+  @job = current_user.jobs.find(params[:id])
 end
 
 def update
