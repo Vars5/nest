@@ -3,7 +3,7 @@
 	<% @job.each do |form| %>
 		<li>
 
-	    	<%= link_to form.title, form %> | <%= link_to "View what the applicants see", new_job_app_path(form) %>
+	    	<%= link_to form.title, form %> | <%= link_to "View what the applicants see", new_job_app_path(form) %> | <%= link_to "Edit the Job", edit_job_path(form) %>
 
 	    </li>
 	<% end %>

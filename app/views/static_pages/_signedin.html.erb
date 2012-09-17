@@ -18,7 +18,7 @@
 				<div class="row">
 					<li class="span12">
 						<div>
-							<strong><p><%= show.title %></p></strong>
+							<strong><p><%= show.title %>  <%= link_to "Edit the Job", edit_job_path(show) %></p></strong>
 							<p><%= show.description %></p>
 							<p><%= link_to "see all applicants (click)", show %></p>
 							<p><%= link_to "see the page prospects see", new_job_app_path(show) %></p>					
