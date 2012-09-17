@@ -22,6 +22,7 @@ def show
   @app = App.find(params[:id])  
   @note = @app.notes.build
   @feed = @app.notes.paginate(:page => params[:page], :per_page => 30)
+  @status = App.find(params[:id])
   
 end
 

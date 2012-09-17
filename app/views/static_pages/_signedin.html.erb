@@ -1,23 +1,38 @@
 <div style="height:100%;">
 	
-	<h4>Dashboard</h4>
-	<p>Test</p>
+	<legend>
+		<h4>Company Name Proxy</h4>
+		<p>The mission statement of the company or goal of this div</p>
+	</legend>
+	
 
+		<p>Area for quick updates</p>
+		</br></br>
 			
 
 <h4>Active Jobs</h4>
-		<ul class="thumbnails">
+
+		<div class="well">
+		<ul>
 			<% @listjobs.each do |show| %>
-			<li class="span3">
-				<div class="thumbnail">
-					<strong><p><%= show.title %></p></strong>
-					<p><%= show.description %></p>
-					<p><%= link_to "see all applicants (click)", show %></p>
-					<p><%= link_to "see the page prospects see", new_job_app_path(show) %></p>					
-					
+				<div class="row">
+					<li class="span12">
+						<div>
+							<strong><p><%= show.title %></p></strong>
+							<p><%= show.description %></p>
+							<p><%= link_to "see all applicants (click)", show %></p>
+							<p><%= link_to "see the page prospects see", new_job_app_path(show) %></p>					
+						</div>
+						
+						<div class="divider" style="width:100%;background-color:#D6D6D6;height:1px;margin:10px 0 20px 0;">
+						</div>
+					</li>
 				</div>
+			
+			
+		
 			<% end %>
-			</li>
 		</ul>
+		</div>
 </div>
 
