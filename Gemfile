@@ -14,6 +14,7 @@ end
 group :production do
   gem 'thin'
   gem 'pg'
+
   #gem 'therubyracer'
   #gem 'libv8', '3.3.10.4'
 end

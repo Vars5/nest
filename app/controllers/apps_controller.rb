@@ -5,7 +5,7 @@ def create
   @job = Job.find(params[:job_id])
   @app = @job.apps.build(params[:app])
   if @app.save
-    redirect_to success
+    redirect_to success_path
   else
     render 'new'
   end
