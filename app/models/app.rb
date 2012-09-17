@@ -8,8 +8,8 @@ class App < ActiveRecord::Base
     :storage => :s3,
     :s3_credentials => {
       :bucket             => ENV['Jobpages']
-      :access_key_id      => ENV['S3_KEY']
-      :secret_access_key  => ENV['S3_SECRET']
+      :access_key_id      => ENV['AWS_ACCESS_KEY_ID']
+      :secret_access_key  => ENV['AWS_SECRET_ACCESS_KEY']
     }
   has_attached_file :coverletter
   has_attached_file :transcript
