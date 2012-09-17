@@ -38,6 +38,9 @@ end
 
 def update
   @job = current_user.jobs.find(params[:id])
+  if @job.update_attributes(params[:job])
+    redirect_to root_path
+  end
 end
 
 def destroy
