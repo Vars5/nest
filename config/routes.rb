@@ -15,7 +15,7 @@ Nest::Application.routes.draw do
 
   root :to => 'static_pages#home'
   match '/jobsindex', :to => 'jobs#index'
-  
+  match '/success', :to => 'apps#success'
   
   
   
