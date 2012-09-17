@@ -5,14 +5,13 @@
 		<p>The mission statement of the company or goal of this div</p>
 	</legend>
 	
-
-		<p>Area for quick updates</p>
+		<%= link_to('Create a job', new_job_path, :class => "btn btn-success")%>
 		</br></br>
 			
 
-<h4>Active Jobs</h4>
+	<h4>Active Jobs</h4>
 
-		<div class="well">
+	<div class="well">
 		<ul>
 			<% @listjobs.each do |show| %>
 				<div class="row">
@@ -26,13 +25,12 @@
 						
 						<div class="divider" style="width:100%;background-color:#D6D6D6;height:1px;margin:10px 0 20px 0;">
 						</div>
+						
 					</li>
 				</div>
-			
-			
-		
 			<% end %>
 		</ul>
-		</div>
+		
+	</div>
 </div>
 
