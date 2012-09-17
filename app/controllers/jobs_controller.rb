@@ -37,7 +37,7 @@ def edit
 end
 
 def update
-  #@job = current_user.jobs.find(params[:id])
+  @job = current_user.jobs.find(params[:id])
 end
 
 def destroy
