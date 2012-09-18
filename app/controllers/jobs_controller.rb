@@ -7,6 +7,7 @@ before_filter :authenticate_user!
 def create
   @job = current_user.jobs.create(params[:job])
   if @job.save
+    flash[:success] = "Job Creation Successful!"
     redirect_to @job
   else
     render 'new'
@@ -39,6 +40,7 @@ end
 def update
   @job = current_user.jobs.find(params[:id])
   if @job.update_attributes(params[:job])
+    flash[:success] = "Job Edit Successful!"
     redirect_to root_path
   end
 end
